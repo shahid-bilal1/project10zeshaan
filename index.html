@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Zeeshan — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="index.js">
+</head>
+<body>
+
+    <!-- ========================================
+         FLOATING BACKGROUND SHAPES
+         ======================================== -->
+    <div class="bg-shapes" aria-hidden="true">
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+    </div>
+
+    <!-- ========================================
+         NAVIGATION BAR
+         ======================================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Paul<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Overlay for mobile menu -->
+        <div class="nav-overlay" id="navOverlay"></div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- Hero Text Content -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Open to Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm<br>
+                    <span class="highlight">Paul Zeeshan</span>
+                </h1>
+                <p class="hero-subtitle">GIT + AI Student | Web Development Learner</p>
+                <p class="hero-description">
+                    I am a student from Raithan, Budgam, currently studying at Amar Singh College 
+                    and developing my technical skills at ILS PLASMA, Srinagar.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#skills" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Skills
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-bg"></div>
+                    <!-- ============================
+                         REPLACE YOUR PHOTO HERE
+                         Save your photo as "photo.jpg"
+                         in the same folder as this HTML file.
+                         ============================ -->
+                    <img src="./img.png" alt="Paul Zeeshan — Profile Photo" class="hero-image">
+                    <!-- Floating decorative elements -->
+                    <div class="hero-float-element el-1">
+                        <i class="fas fa-code"></i> GIT + AI
+                    </div>
+                    <div class="hero-float-element el-2">
+                        <i class="fas fa-graduation-cap"></i> Student
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT ME SECTION
+         ======================================== -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Know Me Better</h2>
+                <p class="section-subtitle">A glimpse into my background, education and passion for technology.</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Animated Visual Card -->
+                <div class="about-image-side fade-in-left">
+                    <div class="about-card-visual">
+                        <div class="about-icon">🎓</div>
+                        <h3>Passionate Learner</h3>
+                        <p>Continuously exploring new technologies and building my skill set in programming, AI and web development.</p>
+                        <div class="about-info-cards">
+                            <div class="about-info-card">
+                                <div class="info-number">12th</div>
+                                <div class="info-label">Completed</div>
+                            </div>
+                            <div class="about-info-card">
+                                <div class="info-number">GIT+AI</div>
+                                <div class="info-label">Course</div>
+                            </div>
+                            <div class="about-info-card">
+                                <div class="info-number">3+</div>
+                                <div class="info-label">Projects</div>
+                            </div>
+                            <div class="about-info-card">
+                                <div class="info-number">∞</div>
+                                <div class="info-label">Curiosity</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="about-text fade-in-right">
+                    <h3>A Student Driven by Curiosity & Technology</h3>
+                    <p>
+                        I have completed my 12th from Higher Secondary School Khansahib and I am 
+                        currently pursuing higher education at Amar Singh College, Srinagar.
+                    </p>
+                    <p>
+                        Alongside my academics, I am building professional skills through the 
+                        GIT + AI program at ILS PLASMA, Srinagar — an institute trusted for over 
+                        27 years of IT excellence.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="about-highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Interested in technology, programming and Artificial Intelligence</span>
+                        </div>
+                        <div class="about-highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Learning modern web development tools and techniques</span>
+                        </div>
+                        <div class="about-highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Continuously developing new technical skills</span>
+                        </div>
+                        <div class="about-highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Based in Raithan, Budgam — Studying in Srinagar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EDUCATION SECTION (TIMELINE)
+         ======================================== -->
+    <section class="section-padding" id="education">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">My Academic Journey</h2>
+                <p class="section-subtitle">From school to college and professional skill training.</p>
+            </div>
+
+            <div class="education-timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Completed</span>
+                        <h3>Higher Secondary School Khansahib</h3>
+                        <p>Successfully completed 12th standard education with a strong academic foundation.</p>
+                        <span class="timeline-tag">12th Pass</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Current</span>
+                        <h3>Amar Singh College, Srinagar</h3>
+                        <p>Currently pursuing higher education and expanding knowledge across various subjects.</p>
+                        <span class="timeline-tag">Undergraduate</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Professional Training</span>
+                        <h3>ILS PLASMA, Srinagar</h3>
+                        <p>Developing professional technical skills through hands-on training and projects.</p>
+                        <span class="timeline-tag">GIT + AI Course</span>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Specialization</span>
+                        <h3>GIT + AI Program</h3>
+                        <p>Focused training in Git version control, Artificial Intelligence tools and modern development practices.</p>
+                        <span class="timeline-tag">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SKILLS SECTION
+         ======================================== -->
+    <section class="skills section-padding" id="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technologies I'm Learning</h2>
+                <p class="section-subtitle">Building a strong foundation across key technologies and tools.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- HTML -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <span class="skill-level">Practicing</span>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <span class="skill-level">Practicing</span>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <span class="skill-level">Learning</span>
+                </div>
+
+                <!-- AI Prompting -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Prompting</h3>
+                    <span class="skill-level">Developing</span>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <span class="skill-level">Learning</span>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <span class="skill-level">Developing</span>
+                </div>
+
+                <!-- New Skills -->
+                <div class="skill-card fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>New Skills</h3>
+                    <span class="skill-level">Exploring</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROJECTS SECTION
+         ======================================== -->
+    <section class="section-padding" id="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">What I've Built</h2>
+                <p class="section-subtitle">Hands-on projects that reflect my learning and growth.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- ============================
+                     PROJECT 1
+                     Replace "#" below with your
+                     actual GitHub project URL.
+                     ============================ -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">HTML &amp; CSS</span>
+                        <h3>Web Development Project</h3>
+                        <p>A responsive website created while learning HTML and CSS, showcasing clean design and proper structure.</p>
+                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ============================
+                     PROJECT 2
+                     Replace "#" below with your
+                     actual GitHub project URL.
+                     ============================ -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Python</span>
+                        <h3>Python Project</h3>
+                        <p>A beginner-friendly Python project demonstrating fundamental programming concepts and logic.</p>
+                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ============================
+                     PROJECT 3
+                     Replace "#" below with your
+                     actual GitHub project URL.
+                     ============================ -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">AI</span>
+                        <h3>AI Prompting Project</h3>
+                        <p>A project focused on using AI prompting techniques and modern AI tools effectively.</p>
+                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         GITHUB SECTION
+         ======================================== -->
+    <section class="github-section section-padding" id="github">
+        <div class="container">
+            <div class="github-card fade-in">
+                <div class="github-icon-wrapper">
+                    <i class="fab fa-github"></i>
+                </div>
+                <h2>Explore My Projects</h2>
+                <p>I am continuously building and improving my projects while developing my technical skills.</p>
+                <!-- ============================
+                     REPLACE GITHUB LINK
+                     Replace "#" with your GitHub
+                     profile URL, for example:
+                     https://github.com/yourusername
+                     ============================ -->
+                <a href="#" class="github-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> Visit My GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ILS PLASMA SECTION
+         ======================================== -->
+    <section class="ils-section section-padding" id="ils-plasma">
+        <div class="container">
+            <div class="ils-container fade-in">
+                <div class="ils-badge">
+                    <i class="fas fa-award"></i>
+                    Professional Training
+                </div>
+                <h2>Developing Skills at<br><span>ILS PLASMA, Srinagar</span></h2>
+                <p>
+                    Currently developing my technical skills through GIT + AI training at 
+                    ILS PLASMA, Srinagar — one of the most trusted IT training institutes in the region.
+                </p>
+                <div class="ils-stats">
+                    <div class="ils-stat">
+                        <div class="stat-number">27+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                    <div class="ils-stat">
+                        <div class="stat-number">1998</div>
+                        <div class="stat-label">Established Since</div>
+                    </div>
+                    <div class="ils-stat">
+                        <div class="stat-number">GIT+AI</div>
+                        <div class="stat-label">Current Course</div>
+                    </div>
+                </div>
+                <div class="ils-trust-card">
+                    <p>"Training with an institute trusted for <strong>27+ years of IT excellence</strong> since 1998."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT SECTION
+         ======================================== -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have a question or want to connect? Feel free to reach out.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info fade-in-left">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, ideas or simply having a 
+                        conversation about technology. Drop me a message!
+                    </p>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail-text">
+                            <div class="label">Email</div>
+                            <div class="value">
+                                <a href="mailto:paulzeeshan351@gmail.com" style="color: var(--text-dark);">
+                                    paulzeeshan351@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail-text">
+                            <div class="label">Location</div>
+                            <div class="value">Raithan, Budgam</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-detail-text">
+                            <div class="label">Currently At</div>
+                            <div class="value">Amar Singh College & ILS PLASMA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card fade-in-right">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group" id="nameGroup">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                            <div class="error-message">Please enter your name.</div>
+                        </div>
+                        <div class="form-group" id="emailGroup">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <div class="error-message">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group" id="messageGroup">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="Write your message here..." required></textarea>
+                            <div class="error-message">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">&copy; 2026 Paul Zeeshan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         SCROLL TO TOP BUTTON
+         ======================================== -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+         All interactivity, animations and form
+         validation in one place.
+         ======================================== -->
+    <script>
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // ============================
+            // MOBILE NAVIGATION TOGGLE
+            // ============================
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            const navOverlay = document.getElementById('navOverlay');
+
+            // Open/close mobile menu
+            menuToggle.addEventListener('click', function () {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('open');
+                navOverlay.classList.toggle('open');
+                document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+            });
+
+            // Close menu when overlay is clicked
+            navOverlay.addEventListener('click', function () {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+                navOverlay.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+
+            // Close menu when a nav link is clicked
+            navLinks.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('open');
+                    navOverlay.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            });
+
+
+            // ============================
+            // NAVBAR SCROLL EFFECT
+            // ============================
+            const navbar = document.getElementById('navbar');
+
+            function handleNavbarScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', handleNavbarScroll);
+            handleNavbarScroll(); // Run on load
+
+
+            // ============================
+            // ACTIVE NAV LINK ON SCROLL
+            // ============================
+            const sections = document.querySelectorAll('section[id]');
+            const navLinkElements = navLinks.querySelectorAll('a');
+
+            function highlightNavOnScroll() {
+                const scrollPosition = window.scrollY + 150;
+
+                sections.forEach(function (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinkElements.forEach(function (link) {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + sectionId) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', highlightNavOnScroll);
+
+
+            // ============================
+            // SCROLL TO TOP BUTTON
+            // ============================
+            const scrollTopBtn = document.getElementById('scrollTop');
+
+            function handleScrollTopVisibility() {
+                if (window.scrollY > 500) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            }
+
+            window.addEventListener('scroll', handleScrollTopVisibility);
+
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+
+            // ============================
+            // FADE-IN ON SCROLL ANIMATION
+            // Uses IntersectionObserver for
+            // performance and smoothness.
+            // ============================
+            const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -60px 0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry, index) {
+                    if (entry.isIntersecting) {
+                        // Add a slight stagger delay based on sibling index
+                        const siblings = entry.target.parentElement.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+                        let staggerIndex = 0;
+                        siblings.forEach(function (sib, i) {
+                            if (sib === entry.target) staggerIndex = i;
+                        });
+
+                        setTimeout(function () {
+                            entry.target.classList.add('visible');
+                        }, staggerIndex * 100);
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(function (el) {
+                observer.observe(el);
+            });
+
+
+            // ============================
+            // CONTACT FORM VALIDATION
+            // Validates name, email and message.
+            // Shows success message on valid submit.
+            // Does NOT actually send email.
+            // ============================
+            const contactForm = document.getElementById('contactForm');
+            const nameGroup = document.getElementById('nameGroup');
+            const emailGroup = document.getElementById('emailGroup');
+            const messageGroup = document.getElementById('messageGroup');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const formSuccess = document.getElementById('formSuccess');
+
+            // Simple email regex
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            // Clear errors on input
+            nameInput.addEventListener('input', function () {
+                nameGroup.classList.remove('error');
+            });
+            emailInput.addEventListener('input', function () {
+                emailGroup.classList.remove('error');
+            });
+            messageInput.addEventListener('input', function () {
+                messageGroup.classList.remove('error');
+            });
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+
+                // Validate name
+                if (nameInput.value.trim() === '') {
+                    nameGroup.classList.add('error');
+                    isValid = false;
+                } else {
+                    nameGroup.classList.remove('error');
+                }
+
+                // Validate email
+                if (!isValidEmail(emailInput.value.trim())) {
+                    emailGroup.classList.add('error');
+                    isValid = false;
+                } else {
+                    emailGroup.classList.remove('error');
+                }
+
+                // Validate message
+                if (messageInput.value.trim() === '') {
+                    messageGroup.classList.add('error');
+                    isValid = false;
+                } else {
+                    messageGroup.classList.remove('error');
+                }
+
+                // If all fields are valid, show success message
+                if (isValid) {
+                    formSuccess.classList.add('show');
+                    contactForm.reset();
+
+                    // Hide success message after 5 seconds
+                    setTimeout(function () {
+                        formSuccess.classList.remove('show');
+                    }, 5000);
+                }
+            });
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+</html>
